@@ -16,6 +16,33 @@ function Tick({tick}) {//tick is from Date.now()
   return(<span>{weekday} {hours}h {minutes}m {seconds}.{milliseconds}s</span>);
 }
 
+const BoxForm = () => {
+
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("no message");
+  const onMySend = e => {
+    e.preventDefault();
+    console.log(email);
+  };
+
+  function onBoxChange(event) {
+    setMessage(`measured ${event.target.value.length} characters`)
+    setEmail(event.target.value);
+  }
+
+  return (
+    <div>
+      <form onSubmit={onMySend}>
+        <p>
+          <label>Text <input type="text" name="email" value={email} onChange={onBoxChange} /></label>{" "}
+          <button>Send</button>{" "}
+          {message}
+        </p>
+      </form>
+    </div>
+  );
+};
+
 function App() {
 
   const [clicked1, setClicked1] = useState(0);
@@ -24,7 +51,7 @@ function App() {
   return (
     <div className="App">
       <p>
-        Loaded <Tick tick={Date.now()}/>. This is coldstart.cc, on Cloudflare pages, version 2023oct16b.
+        Loaded <Tick tick={Date.now()}/>. This is coldstart.cc, on Cloudflare, version 2023oct16d.
       </p>
       <p>
         Clicked <Tick tick={clicked1}/>:{" "}
@@ -36,6 +63,7 @@ function App() {
         <a href="https://cold2.cc/" target="_blank" rel="noreferrer"
         onClick={()=>{setClicked2(Date.now())}}>cold2.cc</a>
       </p>
+      <BoxForm />
     </div>
   );
 }
