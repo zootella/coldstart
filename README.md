@@ -1,70 +1,33 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+How quick, simple, and cheap can the web2 stack be in 2023?
 
-## Available Scripts
+Contestants
+- [ ] 🍺 [coldstart.cc](https://coldstart.cc/) is the starting line
+- [ ] 🍺 [cold1.cc](https://cold1.cc/) starting with [Amplify](https://aws.amazon.com/amplify/)
+- [ ] 🍺 [cold2.cc](https://cold1.cc/) starting with Cloudflare [pages](https://developers.cloudflare.com/pages/) and [functions](https://developers.cloudflare.com/pages/platform/functions/get-started/) or [workers](https://developers.cloudflare.com/workers/)
+- [ ] 🍺 [cold3.cc](https://cold1.cc/) starting with [SST](https://sst.dev/) on AWS
 
-In the project directory, you can run:
+Secrets
+- [ ] The server has API keys the browser cannot access
 
-### `npm start`
+Time
+- [ ] Page shows time from the browser
+- [ ] Page shows time from the server, and the difference between the clocks
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Wait
+- [ ] Page shows the user's true wait time, from the browser navigation to the page showing components rendered from data from the database
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Client and server side code
+- [ ] Client code validates an email
+- [ ] The same code running on the server validates the email
 
-### `npm test`
+Data
+- [ ] Global counter, increment button, when last clicked, and by whom
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Identification
+- [ ] The page knows if this browser has been here before, saving an identifier, and letting the user set a nickname
+- [ ] More than one year later, the nickname is still there, allowing the user to still be signed in
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Routes and cards
+- [ ] The user can navigate between routes on the site, which look like pages but are just DOM updates
+- [ ] Links to routes in the site render to custom titles and image cards in third-party social media sites and chat apps, using Open Graph protocol (Meeting this requirement may change earlier choices about client and server-side rendering)
