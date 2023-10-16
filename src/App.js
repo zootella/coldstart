@@ -11,7 +11,7 @@ function Tick({tick}) {//tick is from Date.now()
   var hours = date.getHours();//extract hours, minutes, seconds, and milliseconds
   var minutes = date.getMinutes();
   var seconds = date.getSeconds();
-  var milliseconds = date.getMilliseconds();
+  var milliseconds = date.getMilliseconds().toString().padStart(3, "0");
 
   return(<span>{weekday} {hours}h {minutes}m {seconds}.{milliseconds}s</span>);
 }
@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <p>
-        Loaded <Tick tick={Date.now()}/>. This is coldstart.cc, on Cloudflare pages, version 2023oct16a.
+        Loaded <Tick tick={Date.now()}/>. This is coldstart.cc, on Cloudflare pages, version 2023oct16b.
       </p>
       <p>
         Clicked <Tick tick={clicked1}/>:{" "}
