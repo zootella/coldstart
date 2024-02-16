@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>coldstart.html</title>
+<script>
+
+function stopwatch(id) {
+	let date = new Date();
+	let weekday = date.toLocaleDateString('en-US', { weekday: 'short' });
+	let hours = date.getHours();
+	let minutes = date.getMinutes();
+	let seconds = date.getSeconds();
+	let milliseconds = date.getMilliseconds().toString().padStart(3, "0");
+
+	document.getElementById(id).innerHTML = `${weekday} ${hours}h ${minutes}m ${seconds}.${milliseconds}s`;
+}
+
+</script>
+</head>
+<body>
+
+<p>Clicked <span id="id1">(not yet)</span>: <a href="https://cold1.cc/" target="_blank" onclick="stopwatch('id1')">cold1.cc</a></p>
+<p>Clicked <span id="id2">(not yet)</span>: <a href="https://cold2.cc/" target="_blank" onclick="stopwatch('id2')">cold2.cc</a></p>
+<p>Clicked <span id="id3">(not yet)</span>: <a href="https://cold3.cc/" target="_blank" onclick="stopwatch('id3')">cold3.cc</a></p>
+
+</body>
+</html>
